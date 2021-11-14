@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () =>  {
 
     // Function to initialize and restart the gameboard
     function createBoard() {
-        bgm.play();
         clearAll(gridDisplay);
         restartButton.style.display = "none";
         resultDisplay.innerHTML = temp;
@@ -56,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
     // Will try 100 times randomly then check if there is
     // an empty space.
     function generate(count) {
+        bgm.play();
         let randomNumber = Math.floor(Math.random() * squares.length);
         if(count < 100) {
             if(squares[randomNumber].innerHTML == 0) {
