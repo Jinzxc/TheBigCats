@@ -91,10 +91,10 @@ h1 {
 
 @keyframes pulse {
   0% {
-    font-size: 40px;
+    width: 70px;
   }
 
   100% {
-    font-size: 30px;
+    width: 60px;
   }
 }
