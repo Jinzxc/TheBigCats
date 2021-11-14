@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(234, 231, 226);
+  background-image: url("./images/sky_bg.jpeg");
+  display: flex;
+  justify-content: center;
+  font-family: "Clear Sans", "Helvetica Neue";
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 60px;
+  color: rgb(185, 203, 217);
+  margin: 0px;
+  margin-left: 5px;
+}
+
+.container {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.score-container {
+  text-align: center;
+  width: 70px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: rgb(176, 224, 230, 0.7);
+  color: rgb(245, 245, 245);
+}
+
+.score-title {
+  font-size: 20px;
+}
+
+#score {
+  font-size: 30px;
+}
+
+#result {
+  font-size: 20px;
+  color: rgb(185, 203, 217);
+  margin-left: 120px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  background: rgb(194, 228, 226);
+  background-image: url("./images/grass_tile.jpeg");
+  border: 5px solid rgb(194, 228, 226, 0);
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.grid div {
+  width: 90px;
+  height: 90px;
+  background-color: rgb(215, 226, 232, 0.1);
+  color:rgb(194, 228, 226);
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  border: 2px rgb(224, 255, 255);
+  border-radius: 10px;
+}
+
+#restart {
+  font-size: 20px;
+  color: rgb(105, 125, 139);
+  margin-left: 180px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 40px;
+  }
+
+  100% {
+    font-size: 30px;
+  }
+}
